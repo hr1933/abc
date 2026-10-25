@@ -125,6 +125,32 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    .notice-body p {
+      margin: 0 0 10px;
+    }
+
+    .notice-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .notice-body ul {
+      margin: 0 0 10px;
+      padding-left: 20px;
+    }
+
+    .notice-body li {
+      margin: 4px 0;
+    }
+
+    .notice-body a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .notice-body a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -137,6 +163,37 @@
     <details class="notice" name="notice">
       <summary>快来使用1933的留言板吧！</summary>
       <p class="notice-body">本网站的创建者是1933，如有问题请尝试与他联系。</p>
+    </details>
+
+    <details class="notice" name="notice">
+      <summary>1933 新作！留言板已上线</summary>
+      <div class="notice-body">
+        <p>
+          1933新作！访问链接：
+          <a href="https://hr1933-web.netlify.app/" target="_blank" rel="noopener noreferrer">https://hr1933-web.netlify.app/</a><br>
+          部署在知名 netlify 平台，现代 Serverless 架构拉满 💪
+        </p>
+
+        <ul>
+          <li>✅ 无需登录 — 拒绝繁琐注册，点开即写，想叫什么叫什么</li>
+          <li>✅ 绿V防伪 — 纯正官方身份，后端 HMAC 加密签名，点击徽章即可验真伪</li>
+          <li>✅ 降维防刷 — 3秒发帖限制 + 1小时冷却，物理超度脚本小子</li>
+          <li>✅ 密码防御 — 恒定时间校验 + 高频爆破自动封禁（黑客亲测已去吃土）</li>
+          <li>✅ XSS免疫 — 别发 &lt;script&gt; 了，前端 esc() 转义教你的代码做回纯文本</li>
+          <li>✅ 极简阅读 — 极简UI无广告追踪，增量渲染丝滑不闪烁</li>
+          <li>✅ 全端支持 — IPv4/IPv6 全量识别，想换IP、绕过限制？全给你扬了！</li>
+        </ul>
+
+        <p>
+          🔗 <a href="https://hr1933-web.netlify.app/" target="_blank" rel="noopener noreferrer">https://hr1933-web.netlify.app/</a><br>
+          （防失联公告板：<a href="https://hr1933.github.io/abc/" target="_blank" rel="noopener noreferrer">https://hr1933.github.io/abc/</a><br>
+          官方主页：<a href="https://hr1933.github.io/hr1933" target="_blank" rel="noopener noreferrer">https://hr1933.github.io/hr1933</a>）
+        </p>
+
+        <p>
+          城主在线，随时反制恶意攻击（提示：别瞎猜管理员密码，不然你会收到“429”封禁大礼包）
+        </p>
+      </div>
     </details>
   </div>
 
