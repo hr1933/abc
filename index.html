@@ -22,6 +22,8 @@
 
     body {
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -60,6 +62,7 @@
     }
 
     .page-title {
+      width: 100%;
       max-width: 680px;
       margin: 0 auto 20px;
       font-size: 22px;
@@ -67,6 +70,7 @@
     }
 
     .notice-list {
+      width: 100%;
       max-width: 680px;
       margin: 0 auto;
       display: flex;
@@ -146,10 +150,20 @@
     .notice-body a {
       color: #2563eb;
       text-decoration: none;
+      word-break: break-all;
     }
 
     .notice-body a:hover {
       text-decoration: underline;
+    }
+
+    .footer {
+      width: 100%;
+      max-width: 680px;
+      margin: auto auto 0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -196,9 +210,9 @@
       </div>
     </details>
   </div>
-<footer style="max-width:680px;margin:32px auto 0;text-align:center;font-size:12px;color:#64748b;">
-  © 2026 1933. 保留所有权利。
-</footer>
+
+  <footer class="footer">© 2026 1933. 保留所有权利。</footer>
+
   <script>
     document.querySelectorAll('details.notice').forEach(function (item) {
       item.addEventListener('toggle', function () {
